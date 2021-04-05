@@ -7,7 +7,9 @@ export default function Button() {
 
   return (
     <div className="App">
-      <Button onClik={() => setContatore(contatore + 1)} />
+      <button onClick={() => setContatore(contatore + 1)}>
+        Cliccami
+      </button>
       <Testomagico testo={contatore} />
     </div>
   );
