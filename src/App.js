@@ -1,11 +1,11 @@
 import "./styles.css";
-import Testomagico from "./Testomagico";
+import Button from "./Button";
 
 export default function App() {
   return (
     <div className="App">
       <h1>Ciao raga</h1>
-      <Testomagico testo="sono una capra " />
+      <Button />
     </div>
   );
 }
