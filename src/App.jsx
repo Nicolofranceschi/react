@@ -1,10 +1,11 @@
 import "./styles.css";
+import Testomagico from "./Testomagico";
 
 export default function App() {
   return (
     <div className="App">
       <h1>Ciao raga</h1>
-      <h2>Questo è il mio primo componente</h2>
+      <Testomagico testo="sono una capra " />
     </div>
   );
 }
