@@ -1,9 +1,14 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { post } from './Fetch';
 
 export function Input() {
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => { console.log(data); }
+    const onSubmit = async (data) => {
+        console.log(data);
+        const res = await post("user",data);
+        console.log(res);
+      };
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
