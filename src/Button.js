@@ -1,9 +1,16 @@
 import "./styles.css";
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import Testomagico from "./Testomagico";
 
 export default function Button() {
   const [contatore, setContatore] = useState(0);
+
+  useEffect(() => {
+
+    document.title = `Hai cliccato ${contatore} volte`;
+
+  },[contatore]);
+
 
   return (
     <div className="App">
