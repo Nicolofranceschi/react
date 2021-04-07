@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { post } from './Fetch';
 
+
 export function Input() {
     const { register, handleSubmit } = useForm();
     const onSubmit = async (data) => {
